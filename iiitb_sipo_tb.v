@@ -1,6 +1,6 @@
 
 `timescale 1ns/1ps
-module testbench();
+module iiitb_sipo_tb();
 reg d,clk;
 wire [3:0]q;
 sipo a(d, clk, q);
