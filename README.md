@@ -1,2 +1,1 @@
-# iiitb_sipo
-serial in parallel out shift register
+# iiitb_sipo - serial in parallel out shift register
