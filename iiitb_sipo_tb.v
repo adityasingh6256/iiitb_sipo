@@ -8,7 +8,7 @@ sipo a(d, clk, q);
 initial
 begin
 $dumpfile ("sipo.vcd");
-$dumpvars (0,testbench);
+ $dumpvars (0,iiitb_sipo_tb);
 
 clk=1'b0;
 forever #5 clk=~clk;
