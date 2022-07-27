@@ -8,7 +8,7 @@ module dff(d,clk,q);
     end
 endmodule 
 
-module sipo(d, clk, q);
+module iiitb_sipo(d, clk, q);
     input d,clk;
     output [3:0]q;
     dff aa(d, clk, q[3]);
