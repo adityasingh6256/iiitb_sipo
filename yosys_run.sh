@@ -6,7 +6,7 @@ read_verilog iiitb_sipo.v
 synth -top iiitb_sipo
 
 # mapping to mycells.lib
-dfflibmap -liberty/home/aditya.singh/Desktop/iiitb_sipo/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+dfflibmap -liberty /home/aditya.singh/Desktop/iiitb_sipo/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 abc -liberty /home/aditya.singh/Desktop/iiitb_sipo/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 clean
 flatten
