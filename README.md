@@ -23,7 +23,7 @@ The logic circuit given below shows a serial-in-parallel-out shift register. The
 
 
 ## Block diagram
-![screenshot app](https://github.com/adityasingh6256/iiitb_sipo/blob/main/images/gtkwave_sipo.png)
+![screenshot app](https://github.com/adityasingh6256/iiitb_sipo/blob/6edaf32e64c5f1a9886302e01326f9aeca164971/images/Screenshot%20from%202022-07-28%2021-26-48.png)
 ## Functional Characteristics
 
 
