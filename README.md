@@ -9,7 +9,7 @@ Flip flops can be used to store a single bit of binary data (1or 0). However, in
 The information stored within these registers can be transferred with the help of shift registers.
 The logic circuit given below shows a serial-in-parallel-out shift register. The circuit consists of four D flip-flops which are connected. The clear (CLR) signal is connected in addition to the clock signal to all the 4 flip flops in order to RESET them. The output of the first flip flop is connected to the input of the next flip flop and so on. All these flip-flops are synchronous with each other since the same clock signal is applied to each flip flop.
 
-![App Screenshot](https://www.electronics-tutorials.ws/wp-content/uploads/2013/08/seq15a.gif?fit=370%2C237?fit=355,226)
+![App Screenshot](https://github.com/adityasingh6256/iiitb_sipo/blob/06de0e1ca40f7cbad47a1649b86ddf0c33ef7c2a/images/ff1.png)
 
 ## Applications
 
@@ -23,11 +23,18 @@ The logic circuit given below shows a serial-in-parallel-out shift register. The
 
 
 ## Block diagram
-![screenshot app](https://github.com/adityasingh6256/iiitb_sipo/blob/6edaf32e64c5f1a9886302e01326f9aeca164971/images/Screenshot%20from%202022-07-28%2021-26-48.png)
+![screenshot app](https://github.com/adityasingh6256/iiitb_sipo/blob/06de0e1ca40f7cbad47a1649b86ddf0c33ef7c2a/images/sipo_blockdiagram.gif)
+
 ## Functional Characteristics
+
+![screenshot app](https://github.com/adityasingh6256/iiitb_sipo/blob/06de0e1ca40f7cbad47a1649b86ddf0c33ef7c2a/images/waveform.png)
+
+![screenshot app](https://github.com/adityasingh6256/iiitb_sipo/blob/06de0e1ca40f7cbad47a1649b86ddf0c33ef7c2a/images/sipo_waveform.png)
+
 
 
 ## Functional Simulation
+
 In ubuntu  
 first install iverilog and gtkwave by   
 
@@ -44,14 +51,17 @@ $ ./a.out
 $ gtkwave sipo.vcd    
 
 you will see your waveforms on gtkwave
+
 ## Contributors
 -   Aditya Singh
 -   Kunal Ghosh
 -   Vinay Rayapati 
+-   
 ## Acknowledgements
 
 
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+- 
 ## Contact Information
 
 - Aditya Singh ,M.Tech student, IIIT Bangalore, 12345adityasingh@gmail.com
