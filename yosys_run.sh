@@ -11,4 +11,4 @@ abc -liberty /home/aditya.singh/Desktop/iiitb_sipo/lib/sky130_fd_sc_hd__tt_025C_
 clean
 flatten
 # write synthesized design
-write_verilog -assert synth_iiitb_sipo.v
+write_verilog -noattr synth_iiitb_sipo.v
