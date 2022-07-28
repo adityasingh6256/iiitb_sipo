@@ -56,12 +56,10 @@ you will see your waveforms on gtkwave
 -   Aditya Singh
 -   Kunal Ghosh
 -   Vinay Rayapati 
--   
 ## Acknowledgements
 
 
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
-- 
 ## Contact Information
 
 - Aditya Singh ,M.Tech student, IIIT Bangalore, 12345adityasingh@gmail.com
