@@ -35,22 +35,47 @@ The logic circuit given below shows a serial-in-parallel-out shift register. The
 
 ## Functional Simulation
 
-In ubuntu  
+In ubuntu    
 first install iverilog and gtkwave by   
-
+```
 $   sudo apt get update  
 $   sudo apt get install iverilog gtkwave
-
+```
 Now To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
-
+```
 $ sudo apt install -y git   
 $ git clone https://github.com/adityasingh6256/iiitb_sipo   
 $ cd iiitb_sipo    
 $ iverilog iiitb_sipo.v iiitb_sipo_tb.v    
 $ ./a.out    
-$ gtkwave sipo.vcd    
+$ gtkwave sipo.vcd
+```
+you will see your waveforms on gtkwave   
+this is RTL simulation,this is very raw and initial level simulation for design
+now we do synthesis   
 
-you will see your waveforms on gtkwave
+##Synthesis   
+
+here we convert out RTL design code to gate level netlist using sky 130Technology standard library.   
+for synthesis we install yosys and gvim   
+command for that   
+```
+$ sudo apt-get update   
+$ sudo apt-get -y install yosys   
+$ sudo apt install vim-gtk3   
+```
+yosys is for synthesis and gvim is just a text editor   
+now command for synthesis   
+```
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib   
+read_verilog iiitb_sipo.v   
+synth -top iiitb_sipo   
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib   
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib   
+flatten   
+show   
+write_verilog -noattr iiitb_sipo_net.v
+```
 
 ## Contributors
 -   Aditya Singh
