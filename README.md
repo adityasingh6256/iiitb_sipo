@@ -29,7 +29,7 @@ The logic circuit given below shows a serial-in-parallel-out shift register. The
 
 ![screenshot app](https://github.com/adityasingh6256/iiitb_sipo/blob/06de0e1ca40f7cbad47a1649b86ddf0c33ef7c2a/images/waveform.png)
 
-![screenshot app](https://github.com/adityasingh6256/iiitb_sipo/blob/06de0e1ca40f7cbad47a1649b86ddf0c33ef7c2a/images/sipo_waveform.png)
+![screenshot app](https://github.com/adityasingh6256/iiitb_sipo/blob/7d9cbbe24e823d47b46bfcbc9705779b93fd15d2/images/RTL_simulation_waveform.png)
 
 
 
@@ -78,7 +78,7 @@ write_verilog -noattr iiitb_sipo_net.v
 ```
  when you give the command 'show' you will see this   
  <p align="center">
- <img width=""1300 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/817dbc966e7ecf252f59aff4c21112b9dec073b8/images/connections.png">
+ <img width=""1300 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/7d9cbbe24e823d47b46bfcbc9705779b93fd15d2/images/netlist.png">
  </p><br>   
  And now you get your netlist file iiitb_sipo_net.v   
  
