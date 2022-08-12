@@ -76,7 +76,8 @@ flatten
 show   
 write_verilog -noattr iiitb_sipo_net.v
 ```
-
+ when you give the command 'show' you will see this   
+ <img width=""1000 height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/817dbc966e7ecf252f59aff4c21112b9dec073b8/images/connections.png">   
 ## Contributors
 -   Aditya Singh
 -   Kunal Ghosh
