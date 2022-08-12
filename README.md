@@ -78,7 +78,7 @@ write_verilog -noattr iiitb_sipo_net.v
 ```
  when you give the command 'show' you will see this   
  <p align="center">
- <img width=""1000 height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/817dbc966e7ecf252f59aff4c21112b9dec073b8/images/connections.png">
+ <img width=""1300 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/817dbc966e7ecf252f59aff4c21112b9dec073b8/images/connections.png">
  </p><br>
 ## Contributors
 -   Aditya Singh
