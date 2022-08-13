@@ -96,7 +96,7 @@ yosys -s yosys_run.sh
 
  when you give the command 'show' you will see this   
  <p align="center">
- <img width=""1500 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/e0e9e75525081237cada24abdf90561d63ea50eb/images/netlist.png">
+ <img width=""1500 height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/e0e9e75525081237cada24abdf90561d63ea50eb/images/netlist.png">
  </p><br>   
  And now you get your netlist file iiitb_sipo_net.v   
 ## Gate Level Simulation   
