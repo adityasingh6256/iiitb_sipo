@@ -85,7 +85,7 @@ write_verilog -noattr iiitb_sipo_net.v
 ```   
 after synth -top iiitb_sipo we will able to see netlist stats.   
 <p align="center">
- <img width="400" height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/1e8317dca9b7481e00631672e31329957a6c76bc/images/stats.png">
+ <img width="600" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/1e8317dca9b7481e00631672e31329957a6c76bc/images/stats.png">
  </p><br>   
  
 instead of giving all these commands one by one for synthesis and netlist we can use yosys_run.sh file from sky130RTLDesignAndSynthesisWorkshop after editing project name and locations in it.   
@@ -96,7 +96,7 @@ yosys -s yosys_run.sh
 
  when you give the command 'show' you will see this   
  <p align="center">
- <img width=""1300 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/7d9cbbe24e823d47b46bfcbc9705779b93fd15d2/images/netlist.png">
+ <img width=""1500 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/e0e9e75525081237cada24abdf90561d63ea50eb/images/netlist.png">
  </p><br>   
  And now you get your netlist file iiitb_sipo_net.v   
 ## Gate Level Simulation   
