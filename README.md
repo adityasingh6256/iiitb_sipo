@@ -27,13 +27,9 @@ The logic circuit given below shows a serial-in-parallel-out shift register. The
 
 ## Functional Characteristics
 
-![screenshot app](https://github.com/adityasingh6256/iiitb_sipo/blob/06de0e1ca40f7cbad47a1649b86ddf0c33ef7c2a/images/waveform.png)
+![screenshot app](https://github.com/adityasingh6256/iiitb_sipo/blob/06de0e1ca40f7cbad47a1649b86ddf0c33ef7c2a/images/waveform.png)   
 
-![screenshot app](https://github.com/adityasingh6256/iiitb_sipo/blob/7d9cbbe24e823d47b46bfcbc9705779b93fd15d2/images/RTL_simulation_waveform.png)
-
-
-
-## Functional Simulation
+## Functional Simulation   
 
 In ubuntu    
 first install iverilog and gtkwave by   
@@ -42,7 +38,7 @@ $   sudo apt get update
 $   sudo apt get install iverilog gtkwave
 ```
 Now To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
-```
+```   
 $ sudo apt install -y git   
 $ git clone https://github.com/adityasingh6256/iiitb_sipo   
 $ cd iiitb_sipo    
@@ -51,6 +47,8 @@ $ ./a.out
 $ gtkwave sipo.vcd
 ```
 you will see your waveforms on gtkwave   
+![screenshot app](https://github.com/adityasingh6256/iiitb_sipo/blob/7d9cbbe24e823d47b46bfcbc9705779b93fd15d2/images/RTL_simulation_waveform.png)   
+
 this is RTL simulation,this is very raw and initial level simulation for design
 now we do synthesis   
 
@@ -87,7 +85,7 @@ write_verilog -noattr iiitb_sipo_net.v
 ```   
 after synth -top iiitb_sipo we will able to see netlist stats.   
 <p align="center">
- <img width=""1300 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/1e8317dca9b7481e00631672e31329957a6c76bc/images/stats.png">
+ <img width="400" height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/1e8317dca9b7481e00631672e31329957a6c76bc/images/stats.png">
  </p><br>   
  
 instead of giving all these commands one by one for synthesis and netlist we can use yosys_run.sh file from sky130RTLDesignAndSynthesisWorkshop after editing project name and locations in it.   
