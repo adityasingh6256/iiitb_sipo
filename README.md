@@ -115,8 +115,10 @@ now you see gtkwave waveform and compare it with fuctional simulation waveform
 <p align="center">
  <img width=""1300 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/1e8317dca9b7481e00631672e31329957a6c76bc/images/GLS_waveform.png">
  </p><br>   
+ 
  ## Author   
- Aditya Singh   
+ 
+ Aditya Singh    
 
 ## Contributors
 -   Aditya Singh
