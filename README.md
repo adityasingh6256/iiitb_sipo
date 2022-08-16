@@ -74,18 +74,20 @@ i copy my project verilog code and test bench(iiitb_sipo.v , iiitb_sipo_tb.v) fr
 yosys is for synthesis and gvim is just a text editor   
 now command for synthesis   
 ```   
+yosys   
 read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib   
 read_verilog iiitb_sipo.v   
 synth -top iiitb_sipo   
 dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib   
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib   
+stat
 flatten   
 show   
 write_verilog -noattr iiitb_sipo_net.v
 ```   
 after synth -top iiitb_sipo we will able to see netlist stats.   
 <p align="center">
- <img width="600" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/1e8317dca9b7481e00631672e31329957a6c76bc/images/stats.png">
+ <img width="400" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/aa4a878dcc96cac8bbec6d8089a3deed125952e1/images/stats_sipo.png">
  </p><br>   
  
 instead of giving all these commands one by one for synthesis and netlist we can use yosys_run.sh file from sky130RTLDesignAndSynthesisWorkshop after editing project name and locations in it.   
@@ -113,6 +115,8 @@ now you see gtkwave waveform and compare it with fuctional simulation waveform
 <p align="center">
  <img width=""1300 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/1e8317dca9b7481e00631672e31329957a6c76bc/images/GLS_waveform.png">
  </p><br>   
+ ## Author   
+ Aditya Singh   
 
 ## Contributors
 -   Aditya Singh
