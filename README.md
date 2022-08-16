@@ -100,8 +100,10 @@ yosys -s yosys_run.sh
  <p align="center">
  <img width=""1500 height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/e0e9e75525081237cada24abdf90561d63ea50eb/images/netlist.png">
  </p><br>   
- And now you get your netlist file iiitb_sipo_net.v   
-## Gate Level Simulation   
+ And now you get your netlist file iiitb_sipo_net.v    
+ 
+## Gate Level Simulation    
+
 now we compare`Functional Simulation` with `GLS` simulation,if they are same then we are good to move for `Physical Design`.   
 command for GLS   
 
@@ -110,9 +112,9 @@ iverilog -DFUNCTIONAL -DUNIT_DELAY=#0 ../my_lib/verilog_model/primitives.v ../my
 ./a.out   
 gtkwave sipo.vcd   
 ```   
-here i give delay of 0 ns ,i can give delay as i will need.
-now you see gtkwave waveform and compare it with fuctional simulation waveform   
-<p align="center">
+here i give delay of 0 ns ,i can give delay as i will need.   
+now you see gtkwave waveform and compare it with fuctional simulation waveform    
+<p align="center">   
  <img width=""1300 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/1e8317dca9b7481e00631672e31329957a6c76bc/images/GLS_waveform.png">
  </p><br>   
  
