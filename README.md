@@ -128,6 +128,7 @@ now you see gtkwave waveform and compare it with fuctional simulation waveform
  </p><br>    
  
   ## Required Installations   
+  
  we need OpenLane and EDA TOOLS    
  First Install Open Lane    
  ```   
@@ -136,8 +137,9 @@ now you see gtkwave waveform and compare it with fuctional simulation waveform
  sudo make   
  sudo make test   
  sudo make mount   
- ```   
+ ```    
  You can use the following example as a smoke test:   
+ 
  ```   
  ./flow.tcl -design spm   
  ```   
@@ -146,12 +148,12 @@ now you see gtkwave waveform and compare it with fuctional simulation waveform
  
  git clone https://github.com/RTimothyEdwards/magic.git   
  cd magic/    
- ./configure   
- sudo make
+ ./configure    
+ sudo make   
  sudo make install    
+ ```   
  
- 
- Now for any problem in this process you can use this github repo The-OpenROAD-Project/OpenLane   
+Now for any problem in this process you can use this github repo The-OpenROAD-Project/OpenLane   
  
  
  
