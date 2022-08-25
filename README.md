@@ -116,7 +116,44 @@ here i give delay of 0 ns ,i can give delay as i will need.
 now you see gtkwave waveform and compare it with fuctional simulation waveform    
 <p align="center">   
  <img width=""1300 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/1e8317dca9b7481e00631672e31329957a6c76bc/images/GLS_waveform.png">
- </p><br>   
+ </p><br>    
+  Now after GLS we move for physical design and we will make final layout of chip.   
+  
+ # Design RTL to GLS2   
+ 
+ what are the steps   
+ <img width=""1300 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/00ddb962665250deda9ef39a795d71d52011a8fb/images/ASIC_flow.png">
+ </p><br>    
+ <img width=""1300 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/00ddb962665250deda9ef39a795d71d52011a8fb/images/asic_flow2.png">
+ </p><br>    
+ 
+  ## Required Installations   
+ we need OpenLane and EDA TOOLS    
+ First Install Open Lane    
+ ```   
+ git clone https://github.com/The-OpenROAD-Project/OpenLane.git    
+ cd OpenLane   
+ sudo make   
+ sudo make test   
+ sudo make mount   
+ ```   
+ You can use the following example as a smoke test:   
+ ```   
+ ./flow.tcl -design spm   
+ ```   
+ Now we will install Magic to see our layouts   
+ ```   
+ 
+ git clone https://github.com/RTimothyEdwards/magic.git   
+ cd magic/    
+ ./configure   
+ sudo make
+ sudo make install    
+ 
+ 
+ Now for any problem in this process you can use this github repo The-OpenROAD-Project/OpenLane   
+ 
+ 
  
  ## Author   
  
