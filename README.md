@@ -148,7 +148,7 @@ Required Installations
  ```   
  ./flow.tcl -design spm   
  ```    
- ##magic   
+ ## magic   
  
  Now we will install Magic to see our layouts   
  ```   
