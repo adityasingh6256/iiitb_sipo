@@ -183,7 +183,7 @@ Required Installations
  cd iiitb_sipo   
  makdir src   
  ```
- now paste project file in src and 
+ now paste project file in src(.v file) and 
  Download the config.json file and place it in the iiitb_gc folder.To generate the layout, type the following commands    
  ```
  cd OpenLane   
