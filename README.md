@@ -129,11 +129,13 @@ now you see gtkwave waveform and compare it with fuctional simulation waveform
  <p align="center">   
  <img width=""1300 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/00ddb962665250deda9ef39a795d71d52011a8fb/images/asic_flow2.png">
  </p><br>   
+ ## OpenLane  
+ OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, CU-GR, Klayout and a number of custom scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII.
+
+more at https://github.com/The-OpenROAD-Project/OpenLane   
  
-  ## Required Installations   
+Required Installations   
   
- we need OpenLane and EDA TOOLS    
- First Install Open Lane    
  ```   
  git clone https://github.com/The-OpenROAD-Project/OpenLane.git    
  cd OpenLane   
@@ -145,20 +147,55 @@ now you see gtkwave waveform and compare it with fuctional simulation waveform
  
  ```   
  ./flow.tcl -design spm   
- ```   
+ ```    
+ ##magic   
+ 
  Now we will install Magic to see our layouts   
  ```   
  
  git clone https://github.com/RTimothyEdwards/magic.git   
- cd magic/    
- ./configure    
- sudo make   
- sudo make install    
+ cd magic   
  ```   
- 
-Now for any problem in this process you can use this github repo The-OpenROAD-Project/OpenLane   
- 
- 
+ Need some System Requirements in Magic installation   
+ ```   
+ sudo apt-get install m4    
+ sudo apt-get install tcsh    
+ sudo apt-get install csh    
+ sudo apt-get install libx11-dev   
+ sudo apt-get install tcl-dev tk-dev   
+ sudo apt-get install libcairo2-dev   
+ sudo apt-get install mesa-common-dev libglu1-mesa-dev   
+ sudo apt-get install libncurses-dev   
+ ```   
+ Now magic installation   
+ ```   
+ ./configure   
+ sudo make   
+ sudo make install   
+ magic   
+ ```   
+ ## Generating the Layout   
+ Preparation steps
+ ```
+ cd OpenLane   
+ cd designs   
+ mkdir iiitb_sipo   
+ cd iiitb_sipo   
+ makdir src   
+ ```
+ now paste project file in src and 
+ Download the config.json file and place it in the iiitb_gc folder.To generate the layout, type the following commands    
+ ```
+ cd OpenLane   
+ sudo make mount   
+ ./flow.tcl -design iiitb_sipo
+ ```
+ Now open magic in new terminal using folowing command to see the final layout   
+ ```
+ cd OpenLane   
+ cd ..designs/..iiitb_sipo/..runs/..RUN_2022.08.21_12.53.02/..results/..final/..def/
+ magic -T /home/aditya/vsd/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../../tmp/merged.min.lef def read iiitb_tlc.def
+ ```   
  
  ## Author   
  
