@@ -176,7 +176,10 @@ Required Installations
  sudo make install   
  magic   
  ```   
+ more at http://opencircuitdesign.com/   
+ 
  ## Generating the Layout   
+ 
  Preparation steps
  ```
  cd OpenLane   
