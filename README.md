@@ -239,7 +239,10 @@ run_synthesis
  <img width="1000" height="100" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/synthesis.png">
  </p><br>      
  
+ 
   Synthesis stats   
+  
+  
   
    <p align="center">   
  <img width="600" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/stats_synthesis.png">
@@ -253,11 +256,15 @@ run_synthesis
  </p><br>    
  
  ## CORE and DIE AREA   
+ 
  CORE AREA
+ 
    <p align="center">   
  <img width="1000" height="200" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ada4e0d13a3fbb8124f77242452a0507de9447ae/images/core_area.png">
  </p><br>    
+ 
  DIE AREA   
+ 
    <p align="center">   
  <img width="1000" height="200" src="https://github.com/adityasingh6256/iiitb_sipo/blob/5c74475f18694d828963d4aae99142b98c980a02/images/die_area.png">
  </p><br>   
@@ -272,11 +279,14 @@ run_synthesis
  <img width="1000" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/placement.png">
  </p><br>     
  
- magic cmd for placement layout   
+ 
+ magic cmd for placement layout 
+ 
  ```   
  cd ../home/aditya/vsd/OpenLane/designs/iiitb_sipo/runs/RUN_2022.08.30_12.48.56/results/placement/
  magic -T /home/aditya/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_sipo.def &
 ```   
+
 
  we can see our Custom cell sky130_vsdinv   
  
@@ -292,11 +302,15 @@ run_synthesis
   <p align="center">   
  <img width="1200" height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/routing1.png">
  </p><br>   
+ 
+ 
   magic cmd for Routing layout   
- ```   
+  
+ ``` 
  cd ../home/aditya/vsd/OpenLane/designs/iiitb_sipo/runs/RUN_2022.08.30_12.48.56/results/routing/
  magic -T /home/aditya/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_sipo.def &
-```    
+ ```    
+ 
  
   <p align="center">   
  <img width="1200" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/routing.png">
@@ -313,7 +327,28 @@ run_synthesis
    <p align="center">   
  <img width="1200" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/sky130_vsdinv_routing.png">
   </p><br>    
-  ## Summary  
+  
+ ### VLSI INTERACTIVE OPENLANE FLOW    
+
+```    
+cd OpenLane/ 
+sudo make mount 
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+run_synthesis
+run_floorplan
+run_placement
+run_cts
+run_routing
+run_magic
+run_magic_spice_export
+run_magic_drc
+run_netgen
+run_magic_antenna_check
+
+```    
+
   
 ### VLSI NON INTERACTIVE OPENLANE FLOW  
 
