@@ -217,7 +217,7 @@ add_lefs -src $lefs
 run_synthesis    
 ```   
  <p align="center">   
- <img width="1600" height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/f734709c674bc3f851476d805c83fdeb3caa6df5/images/prep_design.png">
+ <img width="1200" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/f734709c674bc3f851476d805c83fdeb3caa6df5/images/prep_design.png">
  </p><br>   
 ```    
 
@@ -229,12 +229,12 @@ run_synthesis
   Synthesis stats   
   
    <p align="center">   
- <img width="250" height="250" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/stats_synthesis.png">
+ <img width="1000" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/stats_synthesis.png">
  </p><br>     
  
  ## Floorplan   
   <p align="center">   
- <img width="1600" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/stats_synthesis.png">
+ <img width="1200" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/028c74621f15545a10fbb5064420b6daf1b4d76b/images/floorplan.png">
  </p><br>    
  
  ## CORE and DIE AREA   
