@@ -232,7 +232,7 @@ magic -T sky130A.tech sky130_inv.mag &
 On typing the following commands, the following netlist will open.
 
 <p align="center">
-  <img src="/images/raw_vsdinv.png">
+  <img src="/images/inv_plot.png">
 </p><br>
 
 Now, to extract the spice netlist, type the following commands in the tcl console. Here, parasitic capacitances and resistances of the inverter is extracted by  `cthresh 0 rthresh 0`.
@@ -398,18 +398,15 @@ run_synthesis
 ```    
 
 ## Synthesis    
-  <p align="center">   
- <img width="1000" height="100" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/synthesis.png">
- </p><br>      
+  <p align="center">
+  <img src="/images/synthesis.png">
+</p><br>   
  
  
   Synthesis stats   
-  
-  
-  
-   <p align="center">   
- <img width="600" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/stats_synthesis.png">
- </p><br>     
+   <p align="center">
+  <img src="/images/stats_synthesis.png ">
+  </p><br>   
  
  ## Floorplan   
  
