@@ -181,19 +181,46 @@ Required Installations
  
  ## Generating the Layout   
  
- ## preperation   
- <p align="center">   
- <img width="1000" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/3fbc6ff9ceb7d347703d220135514779b0104cd7/images/prep_design.png">
- </p><br>   
- 
- we also add customized inverter sky130_vsdinv.lef   
- 
- ```   
- prep -design iiitb_sipo
+ ## Config.json file   
+ ```
+ {
+    "DESIGN_NAME": "iiitb_sipo",
+    "VERILOG_FILES": "dir::src/iiitb_sipo.v",
+    "CLOCK_PORT": "clk",
+    "CLOCK_NET": "clk",
+    "GLB_RESIZER_TIMING_OPTIMIZATIONS": true,
+    "CLOCK_PERIOD": 65,
+    "PL_RANDOM_GLB_PLACEMENT": 1,
+    "PL_TARGET_DENSITY": 0.5,
+    "FP_SIZING" : "relative",
+
+"LIB_SYNTH": "dir::src/sky130_fd_sc_hd__typical.lib",
+"LIB_FASTEST": "dir::src/sky130_fd_sc_hd__fast.lib",
+"LIB_SLOWEST": "dir::src/sky130_fd_sc_hd__slow.lib",
+"LIB_TYPICAL": "dir::src/sky130_fd_sc_hd__typical.lib",
+"TEST_EXTERNAL_GLOB": "dir::../iiitb_sipo/src/*",
+"SYNTH_DRIVING_CELL":"sky130_vsdinv",
+
+    "pdk::sky130*": {
+        "FP_CORE_UTIL": 5,
+        "scl::sky130_fd_sc_hd": {
+            "FP_CORE_UTIL": 5
+        }
+    }
+}    
+```    
+## Integration of Custom Cell in OpenLane   
+```   
+prep -design iiitb_sipo
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
 add_lefs -src $lefs
-run_synthesis
+run_synthesis    
 ```   
+ <p align="center">   
+ <img width="1000" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/f734709c674bc3f851476d805c83fdeb3caa6df5/images/prep_design.png">
+ </p><br>   
+```    
+
 ## synthesis   
   <p align="center">   
  <img width="1000" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/3fbc6ff9ceb7d347703d220135514779b0104cd7/images/synthesis.png">
