@@ -342,12 +342,12 @@ run_synthesis
   -Congestion Report   
   
   <p align="center">   
- <img width="475" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/congestion_report.png">
+ <img width="475" height="450" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/congestion_report.png">
   </p><br>   
   
   -Power and Area report   
   
-    <p align="center">      
+   <p align="center">   
    <img width="500" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/power_report.png">
    </p><br>      
   
