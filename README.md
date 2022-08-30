@@ -229,12 +229,12 @@ run_synthesis
   Synthesis stats   
   
    <p align="center">   
- <img width="1000" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/stats_synthesis.png">
+ <img width="600" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/stats_synthesis.png">
  </p><br>     
  
  ## Floorplan   
   <p align="center">   
- <img width="1200" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/028c74621f15545a10fbb5064420b6daf1b4d76b/images/floorplan.png">
+ <img width="1200" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/028c74621f15545a10fbb5064420b6daf1b4d76b/images/floorplan.png">
  </p><br>    
  
  ## CORE and DIE AREA   
@@ -270,8 +270,25 @@ run_synthesis
  ## ROUTING   
  
   <p align="center">   
- <img width="1200" height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/6e4f7bea54719da1d4508c6f9d5399c84f0c5914/images/routing.png">
+ <img width="1200" height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/routing1.png">
  </p><br>   
+ 
+  <p align="center">   
+ <img width="1200" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/routing.png">
+ </p><br>  
+ 
+ ZOOM VIEW   
+ 
+  <p align="center">   
+ <img width="1200" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/zoom_routing.png">
+ </p><br>  
+ 
+ we can see our Custom cell sky130_vsdinv    
+ 
+   <p align="center">   
+ <img width="1200" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/sky130_vsdinv_routing.png">
+ </p><br>   
+ 
  
  
  
