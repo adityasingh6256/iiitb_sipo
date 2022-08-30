@@ -232,7 +232,7 @@ magic -T sky130A.tech sky130_inv.mag &
 On typing the following commands, the following netlist will open.
 
 <p align="center">
-  <img src="/images/inv_plot.png">
+  <img src="/images/raw_vsdinv.png">
 </p><br>
 
 Now, to extract the spice netlist, type the following commands in the tcl console. Here, parasitic capacitances and resistances of the inverter is extracted by  `cthresh 0 rthresh 0`.
@@ -242,7 +242,7 @@ ext2spice cthresh 0 rthresh 0
 ext2spice
 ```
 <p align="center">
-  <img src="/images/inv2.png">
+  <img src="/images/ext_all.png">
 </p><br>
 
 The extracted spice model is shown below (which is edited to simulate the inverter).
@@ -410,35 +410,33 @@ run_synthesis
  
  ## Floorplan   
  
+ <p align="center">
+  <img src="/images/floorplan.png ">
+  </p><br>    
  
-  <p align="center">   
- <img width="1200" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/028c74621f15545a10fbb5064420b6daf1b4d76b/images/floorplan.png">
- </p><br>    
- 
- ## CORE and DIE AREA   
+ ## Core and Die area  
  
  CORE AREA
  
-   <p align="center">   
- <img width="1000" height="200" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ada4e0d13a3fbb8124f77242452a0507de9447ae/images/core_area.png">
- </p><br>    
+  <p align="center">
+  <img src="/images/core_area.png ">
+  </p><br>  
  
  DIE AREA   
  
-   <p align="center">   
- <img width="1000" height="200" src="https://github.com/adityasingh6256/iiitb_sipo/blob/5c74475f18694d828963d4aae99142b98c980a02/images/die_area.png">
- </p><br>   
+ <p align="center">
+  <img src="/images/die_area.png ">
+  </p><br>  
  
  ## Placement   
  
-  <p align="center">   
- <img width="1000" height="275" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/placement1.png">
- </p><br>   
+  <p align="center">
+  <img src="/images/placement1.png ">
+  </p><br>  
  
- <p align="center">   
- <img width="1000" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/placement.png">
- </p><br>     
- 
+<p align="center">
+  <img src="/images/placement.png ">
+  </p><br> 
  
  magic cmd for placement layout 
  
@@ -450,18 +448,18 @@ run_synthesis
 
  we can see our Custom cell sky130_vsdinv   
  
- 
-  <p align="center">   
- <img width="1000" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ada4e0d13a3fbb8124f77242452a0507de9447ae/images/sky130_vsdinv_placement.png">
- </p><br>    
- 
+ <p align="center">
+  <img src="/images/sky130_vsdinv_placement.png">
+  </p><br> 
+    
  
  
  ## ROUTING   
  
-  <p align="center">   
- <img width="1200" height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/routing1.png">
- </p><br>   
+  <p align="center">
+  <img src="/images/routing1.png">
+  </p><br> 
+    
  
  
   magic cmd for Routing layout   
@@ -471,11 +469,10 @@ run_synthesis
  magic -T /home/aditya/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_sipo.def &
  ```    
  
- 
-  <p align="center">   
- <img width="1200" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/routing.png">
- </p><br>  
- 
+  <p align="center">
+  <img src="/images/routing.png">
+  </p><br> 
+    
  ZOOM VIEW   
  
   <p align="center">   
@@ -495,21 +492,24 @@ run_synthesis
  
  - Time report   
  
-   <p align="center">   
- <img width="600" height="900" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/time_report.png">
-  </p><br>   
+   <p align="center">
+  <img src="/images/time_report.png">
+  </p><br> 
+    
   
   -Congestion Report   
   
-  <p align="center">   
- <img width="475" height="450" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/congestion_report.png">
-  </p><br>   
+    <p align="center">
+  <img src="/images/congestion_report.png">
+  </p><br> 
+     
   
   -Power and Area report   
   
-   <p align="center">   
-   <img width="500" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/power_report.png">
-   </p><br>      
+   <p align="center">
+  <img src="/images/power_report.png">
+  </p><br> 
+        
   
  ### VLSI INTERACTIVE OPENLANE FLOW    
 
