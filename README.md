@@ -484,6 +484,11 @@ run_synthesis
    <p align="center">   
  <img width="1200" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/sky130_vsdinv_routing.png">
   </p><br>    
+  Area report by magic   
+   <p align="center">
+  <img src="/images/box_area.png">
+  </p><br>   
+  
   
  ## Logs & Reports  
   we can check it in 
