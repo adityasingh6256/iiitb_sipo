@@ -336,19 +336,19 @@ run_synthesis
  - Time report   
  
    <p align="center">   
- <img width="500" height="900" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/time_report.png">
+ <img width="600" height="900" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/time_report.png">
   </p><br>   
   
   -Congestion Report   
   
   <p align="center">   
- <img width="500" height="900" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/congestion_report.png">
+ <img width="400" height="800" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/congestion_report.png">
   </p><br>   
   
   -Power and Area report
   
     <p align="center">   
- <img width="600" height="1000" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/power_report.png">
+ <img width="400" height="800" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/power_report.png">
   </p><br>   
   
  ### VLSI INTERACTIVE OPENLANE FLOW    
