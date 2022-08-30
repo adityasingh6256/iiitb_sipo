@@ -223,22 +223,22 @@ run_synthesis
 
 ## Synthesis    
   <p align="center">   
- <img width="800" height="50" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/synthesis.png">
+ <img width="1000" height="100" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/synthesis.png">
  </p><br>      
  
   Synthesis stats   
   
    <p align="center">   
- <img width="250" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/stats_synthesis.png">
+ <img width="250" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/stats_synthesis.png">
  </p><br>     
  
  ## Placement   
  
   <p align="center">   
- <img width="1000" height="300" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/placement1.png">
+ <img width="1000" height="275" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/placement1.png">
  </p><br>   
  <p align="center">   
- <img width="800" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/placement.png">
+ <img width="100" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/placement.png">
  </p><br>    
  
  ## ROUTING   
