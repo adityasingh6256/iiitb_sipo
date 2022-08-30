@@ -179,9 +179,9 @@ Required Installations
  ```   
  more at http://opencircuitdesign.com/   
  
- # Generating the Layout    
+ # Generating the Layout (RTL TO GDSII)   
  
-  Preparation steps
+ Preparation steps
  ```
  cd OpenLane   
  cd designs   
