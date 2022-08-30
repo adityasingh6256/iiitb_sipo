@@ -13,7 +13,8 @@ The shift register, which allows serial input (one bit after the other through a
  - [6. Synthesis](#6-Synthesis)<br>
    - [6.1. Softwares Used](#61-Softwares-Used)<br>
    - [6.2. Run Synthesis](#62-Run-Synthesis)<br>
- - [6. Gate Level Simulation GLS](#6-Gate-Level-Simulation-GLS)<br>
+ - [7. Netlist](#6-Netlist)<br>
+ - [8. Gate Level Simulation GLS](#6-Gate-Level-Simulation-GLS)<br>
  - [7. Creating Custom Cell](#7-Creating-Custom-Cell)
  - [8. Physical Design](#8-Physical-Design)<br>
    - [8.1. Software Used](#81-Softwares-Used)
@@ -116,7 +117,9 @@ stat
 flatten   
 show   
 write_verilog -noattr iiitb_sipo_net.v
-```   
+```  
+# 7. Netlist   
+
 after synth -top iiitb_sipo we will able to see netlist stats.   
 <p align="center">
  <img width="400" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/aa4a878dcc96cac8bbec6d8089a3deed125952e1/images/stats_sipo.png">
@@ -134,7 +137,7 @@ yosys -s yosys_run.sh
  </p><br>   
  And now you get your netlist file iiitb_sipo_net.v    
  
-## Gate Level Simulation    
+# 8. Gate Level Simulation GLS   
 
 now we compare`Functional Simulation` with `GLS` simulation,if they are same then we are good to move for `Physical Design`.   
 command for GLS   
@@ -151,7 +154,7 @@ now you see gtkwave waveform and compare it with fuctional simulation waveform
  </p><br>    
   Now after GLS we move for physical design and we will make final layout of chip.   
   
- # Design RTL to GLS2   
+ # 9. Physical Design(RTL to GDSII)  
  
  what are the steps   
  
