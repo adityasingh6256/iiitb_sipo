@@ -183,7 +183,7 @@ Required Installations
  
  ## preperation   
  <p align="center">   
- <img width="400" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/3fbc6ff9ceb7d347703d220135514779b0104cd7/images/prep_design.png">
+ <img width="1000" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/3fbc6ff9ceb7d347703d220135514779b0104cd7/images/prep_design.png">
  </p><br>   
  
  we also add customized inverter sky130_vsdinv.lef   
@@ -194,10 +194,9 @@ set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
 add_lefs -src $lefs
 run_synthesis
 ```   
-
- ## synthesis   
+## synthesis   
  <p align="center">   
- <img width="400" height="700"https://github.com/adityasingh6256/iiitb_sipo/blob/3fbc6ff9ceb7d347703d220135514779b0104cd7/images/synthesis.png">
+ <img width="1000" height="400"https://github.com/adityasingh6256/iiitb_sipo/blob/3fbc6ff9ceb7d347703d220135514779b0104cd7/images/synthesis.png">
  </p><br>                                                                                                          
                                                                                                                                                
                                                                                                                                                
