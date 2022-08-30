@@ -233,7 +233,19 @@ run_synthesis
  </p><br>     
  
  ## Floorplan   
+  <p align="center">   
+ <img width="1600" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/stats_synthesis.png">
+ </p><br>    
  
+ ## CORE and DIE AREA   
+ CORE AREA
+   <p align="center">   
+ <img width="1000" height="200" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ada4e0d13a3fbb8124f77242452a0507de9447ae/images/core_area.png">
+ </p><br>    
+ DIE AREA   
+   <p align="center">   
+ <img width="1000" height="200" src="https://github.com/adityasingh6256/iiitb_sipo/blob/5c74475f18694d828963d4aae99142b98c980a02/images/die_area.png">
+ </p><br>   
  
  ## Placement   
  
