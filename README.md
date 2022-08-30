@@ -180,6 +180,15 @@ Required Installations
  more at http://opencircuitdesign.com/   
  
  ## Generating the Layout   
+  Preparation steps
+ ```
+ cd OpenLane   
+ cd designs   
+ mkdir iiitb_sipo   
+ cd iiitb_sipo   
+ makdir src   
+ ```
+ now paste project file in src(.v file) and make your config.json file and place it in the iiitb_sipo folder in Designs.
  
  ## Config.json file   
  ```
@@ -281,40 +290,29 @@ run_synthesis
  
   <p align="center">   
  <img width="1200" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/zoom_routing.png">
- </p><br>  
+ </p><br>   
  
  we can see our Custom cell sky130_vsdinv    
  
    <p align="center">   
  <img width="1200" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/sky130_vsdinv_routing.png">
- </p><br>   
- 
- 
- 
- 
- 
-                                                                                                                                               
-                                                                                                                                               
- Preparation steps
- ```
- cd OpenLane   
- cd designs   
- mkdir iiitb_sipo   
- cd iiitb_sipo   
- makdir src   
- ```
- now paste project file in src(.v file) and 
- Download the config.json file and place it in the iiitb_gc folder.To generate the layout, type the following commands    
+  </p><br>    
+  
+### VLSI NON INTERACTIVE OPENLANE FLOW  
+
+To generate the layout, type the following commands    
  ```
  cd OpenLane   
  sudo make mount   
  ./flow.tcl -design iiitb_sipo
- ```
- Now open magic in new terminal using folowing command to see the final layout   
+ ```    
+ 
+ Now open magic in new terminal using folowing command to see the final layout  in non interactive way   
+ 
  ```
  cd OpenLane   
  cd ..designs/..iiitb_sipo/..runs/..RUN_2022.08.21_12.53.02/..results/..final/..def/
- magic -T /home/aditya/vsd/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../../tmp/merged.min.lef def read iiitb_tlc.def
+ magic -T /home/aditya/vsd/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../../tmp/merged.nom.lef def read iiitb_sipo.def &
  ```   
  
  ## Author   
