@@ -205,8 +205,15 @@ run_synthesis
  </p><br>     
  ## Placement   
   <p align="center">   
- <img width="1200" height="800" src="https://github.com/adityasingh6256/iiitb_sipo/blob/f6405a3f7e3e74cd5ab295ba088056e580e024a5/images/placement.png">
+ <img width="1200" height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/f6405a3f7e3e74cd5ab295ba088056e580e024a5/images/placement.png">
  </p><br>   
+ 
+ ## ROUTING   
+ 
+  <p align="center">   
+ <img width="1200" height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/6e4f7bea54719da1d4508c6f9d5399c84f0c5914/images/routing.png">
+ </p><br>   
+ 
  
  
  
