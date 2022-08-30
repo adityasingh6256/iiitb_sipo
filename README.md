@@ -179,7 +179,8 @@ Required Installations
  ```   
  more at http://opencircuitdesign.com/   
  
- ## Generating the Layout   
+ # Generating the Layout    
+ 
   Preparation steps
  ```
  cd OpenLane   
@@ -219,6 +220,9 @@ Required Installations
 }    
 ```    
 ## Integration of Custom Cell in OpenLane   
+
+We will do all in Interactive OpenLane Flow
+
 ```   
 prep -design iiitb_sipo
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
@@ -242,6 +246,8 @@ run_synthesis
  </p><br>     
  
  ## Floorplan   
+ 
+ 
   <p align="center">   
  <img width="1200" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/028c74621f15545a10fbb5064420b6daf1b4d76b/images/floorplan.png">
  </p><br>    
@@ -264,9 +270,14 @@ run_synthesis
  
  <p align="center">   
  <img width="1000" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/d09f62d43b3b27a425f5b24f3837b521c79bb23f/images/placement.png">
- </p><br>    
+ </p><br>     
  
- 
+ magic cmd for placement layout   
+ ```   
+ cd ../home/aditya/vsd/OpenLane/designs/iiitb_sipo/runs/RUN_2022.08.30_12.48.56/results/placement/
+ magic -T /home/aditya/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_sipo.def &
+```   
+
  we can see our Custom cell sky130_vsdinv   
  
  
@@ -281,6 +292,11 @@ run_synthesis
   <p align="center">   
  <img width="1200" height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/routing1.png">
  </p><br>   
+  magic cmd for Routing layout   
+ ```   
+ cd ../home/aditya/vsd/OpenLane/designs/iiitb_sipo/runs/RUN_2022.08.30_12.48.56/results/routing/
+ magic -T /home/aditya/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_sipo.def &
+```    
  
   <p align="center">   
  <img width="1200" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/routing.png">
@@ -297,6 +313,7 @@ run_synthesis
    <p align="center">   
  <img width="1200" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/sky130_vsdinv_routing.png">
   </p><br>    
+  ## Summary  
   
 ### VLSI NON INTERACTIVE OPENLANE FLOW  
 
