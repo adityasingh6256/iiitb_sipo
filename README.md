@@ -217,7 +217,7 @@ add_lefs -src $lefs
 run_synthesis    
 ```   
  <p align="center">   
- <img width="1000" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/f734709c674bc3f851476d805c83fdeb3caa6df5/images/prep_design.png">
+ <img width="1600" height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/f734709c674bc3f851476d805c83fdeb3caa6df5/images/prep_design.png">
  </p><br>   
 ```    
 
