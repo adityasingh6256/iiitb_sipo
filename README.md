@@ -328,6 +328,29 @@ run_synthesis
  <img width="1200" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/sky130_vsdinv_routing.png">
   </p><br>    
   
+ ## Logs & Reports  
+  we can check it in 
+  
+  /home/aditya/vsd/OpenLane/designs/iiitb_sipo/runs/RUN_2022.08.30_12.48.56/logs/routing/  
+ 
+ - Time report   
+ 
+   <p align="center">   
+ <img width="500" height="900" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/time_report.png">
+  </p><br>   
+  
+  -Congestion Report   
+  
+  <p align="center">   
+ <img width="500" height="900" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/congestion_report.png">
+  </p><br>   
+  
+  -Power and Area report
+  
+    <p align="center">   
+ <img width="600" height="1000" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/power_report.png">
+  </p><br>   
+  
  ### VLSI INTERACTIVE OPENLANE FLOW    
 
 ```    
