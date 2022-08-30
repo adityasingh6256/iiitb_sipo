@@ -342,13 +342,13 @@ run_synthesis
   -Congestion Report   
   
   <p align="center">   
- <img width="400" height="800" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/congestion_report.png">
+ <img width="400" height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/congestion_report.png">
   </p><br>   
   
   -Power and Area report
   
     <p align="center">   
- <img width="400" height="800" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/power_report.png">
+ <img width="400" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/power_report.png">
   </p><br>   
   
  ### VLSI INTERACTIVE OPENLANE FLOW    
