@@ -28,9 +28,10 @@ The shift register, which allows serial input (one bit after the other through a
    - [9.10 Logs and Reports](#910-Logs and Reports)
  - [10. Summary](#10-Summary)
  - [Author](#11-Author)
- - [Acknowledgement](#12-Acknowledgement)
- - [Contact Information](#13-Contact-Information)
- - [References](#14-References)
+ - [Contributors](#12-Contributors)
+ - [Acknowledgement](#13-Acknowledgement)
+ - [Contact Information](#14-Contact-Information)
+ - [References](#15-References)
 
 
 # 1. Introduction
@@ -554,21 +555,21 @@ Also, sta report post synthesis can be viewed by going to the location `logs\cts
   
   /home/aditya/vsd/OpenLane/designs/iiitb_sipo/runs/RUN_2022.08.30_12.48.56/logs/routing/  
  
- - Time report   
+ ### Time report   
  
    <p align="center">
   <img src="/images/time_report.png">
   </p><br> 
     
   
-  -Congestion Report   
+  ### Congestion Report   
   
     <p align="center">
   <img src="/images/congestion_report.png">
   </p><br> 
      
   
-  -Power and Area report   
+  ### Power and Area report   
   
    <p align="center">
   <img src="/images/power_report.png">
@@ -615,20 +616,34 @@ To generate the layout, type the following commands
  magic -T /home/aditya/vsd/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../../tmp/merged.nom.lef def read iiitb_sipo.def &
  ```   
  
- ## Author   
+# 11. Author   
  
  Aditya Singh    
 
-## Contributors
--   Aditya Singh
--   Kunal Ghosh
--   Vinay Rayapati   
-   
-## Acknowledgements
+# 12. Contributors   
 
+ -   Aditya Singh
+ -   Kunal Ghosh
+ -   Vinay Rayapati   
+   
+# 13. Acknowledgements   
 
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
-## Contact Information
+
+# 14. Contact Information
 
 - Aditya Singh ,M.Tech student, IIIT Bangalore, 12345adityasingh@gmail.com
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
+# 15. References   
+
+[^1]: [SIPO](https://www.allaboutcircuits.com/textbook/digital/chpt-12/serial-in-parallel-out-shift-register/)   
+
+[^2]: for synthesis and pysical design - [VSDIAT](https://vsdiat.com/)
+
+[^3]: For magic,pdks,openlane ..EDA tools-[opencircuitdesign]((http://opencircuitdesign.com/))
+
+[^4]: Icarus Verilog - [iverilog](http://iverilog.icarus.com/)
+
+[^5]: GTK Wave [documentation](http://gtkwave.sourceforge.net/gtkwave.pdf)
+
+[^6]: [Yosys](https://yosyshq.net/yosys/) synthesis tool
