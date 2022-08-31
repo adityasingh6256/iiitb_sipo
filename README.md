@@ -25,7 +25,7 @@ The shift register, which allows serial input (one bit after the other through a
    - [9.7. Placement](#97-Placement)
    - [9.8. Clock Tree Synthesis](#98-Clock-Tree-Synthesis)
    - [9.9. Routing](#99-Routing)
-   - [9.10 Logs and Reports](#910-Logs and Reports)
+   - [9.10 Logs and Reports](#910-Logs-and-Reports)
  - [10. Summary](#10-Summary)
  - [Author](#11-Author)
  - [Contributors](#12-Contributors)
