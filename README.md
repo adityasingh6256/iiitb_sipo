@@ -26,10 +26,11 @@ The shift register, which allows serial input (one bit after the other through a
    - [9.8. Clock Tree Synthesis](#98-Clock-Tree-Synthesis)
    - [9.9. Routing](#99-Routing)
    - [9.10 Logs and Reports](#910-Logs and Reports)
- - [Author](#9-Author)
- - [Acknowledgement](#10-Acknowledgement)
- - [Contact Information](#11-Contact-Information)
- - [References](#12-References)
+ - [10. Summary](#10-Summary)
+ - [Author](#11-Author)
+ - [Acknowledgement](#12-Acknowledgement)
+ - [Contact Information](#13-Contact-Information)
+ - [References](#14-References)
 
 
 # 1. Introduction
@@ -491,26 +492,23 @@ run_synthesis
  
  <p align="center">
   <img src="/images/sky130_vsdinv_placement.png">
-  </p><br>  
+  </p><br>   
+  
   ## 9.8. Clock Tree Synthesis   
   The next step is to run run clock tree synthesis. The CTS run adds clock buffers in therefore buffer delays come into picture and our analysis from here on deals with real clocks. To run clock tree synthesis, type the following commands
   ```   
   run_cts   
   ```   
-  <p align="center">
+ 
+
+The netlist with clock buffers can be viewed by going to the location `results\cts\iiitb_sipo.v`
+
+Also, sta report post synthesis can be viewed by going to the location `logs\cts\12-cts.log`
+<p align="center">
   <img src="/images/cts.png">
 </p><br>
 
-The netlist with clock buffers can be viewed by going to the location `results\cts\iiitb_gc.v`
-
-Also, sta report post synthesis can be viewed by going to the location `logs\synthesis\12-cts.log`
-<p align="center">
-  <img src="/images/cts_sta.png">
-</p><br>
-
     
- 
- 
  ## 9.9. Routing    
  ```    
  run_routing  
@@ -576,6 +574,7 @@ Also, sta report post synthesis can be viewed by going to the location `logs\syn
   <img src="/images/power_report.png">
   </p><br> 
         
+  # 10. Summary   
   
  ### VLSI INTERACTIVE OPENLANE FLOW    
 
