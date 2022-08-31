@@ -16,9 +16,10 @@ The shift register, which allows serial input (one bit after the other through a
  - [7. Netlist](#6-Netlist)<br>
  - [8. Gate Level Simulation GLS](#6-Gate-Level-Simulation-GLS)<br>
  - [7. Creating Custom Cell](#7-Creating-Custom-Cell)
- - [8. Physical Design](#8-Physical-Design)<br>
-   - [8.1. Software Used](#81-Softwares-Used)
-   - [8.2. Preperation for Running OpenLane](#82-Preperation-for-Running-OpenLane)
+ - [9. Physical Design (RTL to GDSII)](#8-Physical-Design-(RTL-to-GDSII))<br>
+   - [9.1. Software Used and Installation](#91-Softwares-Used-and-Installation)
+   - [9.2 Design a Inverter library cell - sky130_vsdinv](#92-Design-a-Inverter-library-cell---sky130_vsdinv)
+   - [9.3. Preperation for Running OpenLane](#82-Preperation-for-Running-OpenLane)
    - [8.3. Synthesis](#83-Synthesis)
    - [8.4. Floorplan](#84-Floorplan)
    - [8.5. Placement](#85-Placement)
