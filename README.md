@@ -616,7 +616,7 @@ To generate the layout, type the following commands
  magic -T /home/aditya/vsd/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../../tmp/merged.nom.lef def read iiitb_sipo.def &
  ```   
  
-# 11. Author   
+# 11. Author    
  
  Aditya Singh    
 
@@ -634,16 +634,16 @@ To generate the layout, type the following commands
 
 - Aditya Singh ,M.Tech student, IIIT Bangalore, 12345adityasingh@gmail.com
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
-# 15. References   
+# 15. *References*  
 
 [^1]: [SIPO](https://www.allaboutcircuits.com/textbook/digital/chpt-12/serial-in-parallel-out-shift-register/)   
 
-[^2]: for synthesis and pysical design - [VSDIAT](https://vsdiat.com/)
+[^2]: for synthesis and pysical design - [VSDIAT](https://vsdiat.com/)    
 
-[^3]: For magic,pdks,openlane ..EDA tools-[opencircuitdesign]((http://opencircuitdesign.com/))
+[^3]: For magic,pdks,openlane ..EDA tools-[opencircuitdesign](http://opencircuitdesign.com/)   
 
-[^4]: Icarus Verilog - [iverilog](http://iverilog.icarus.com/)
+[^4]: Icarus Verilog - [iverilog](http://iverilog.icarus.com/)      
 
-[^5]: GTK Wave [documentation](http://gtkwave.sourceforge.net/gtkwave.pdf)
+[^5]: GTK Wave [documentation](http://gtkwave.sourceforge.net/gtkwave.pdf)   
 
-[^6]: [Yosys](https://yosyshq.net/yosys/) synthesis tool
+[^6]: [Yosys](https://yosyshq.net/yosys/) synthesis tool    
