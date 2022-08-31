@@ -552,7 +552,7 @@ Also, sta report post synthesis can be viewed by going to the location `logs\cts
   </p><br>   
   
   
- ## 9.10. Logs & Reports  
+ ## 9.10. Logs and Reports  
   we can check it in 
   
   /home/aditya/vsd/OpenLane/designs/iiitb_sipo/runs/RUN_2022.08.30_12.48.56/logs/routing/  
