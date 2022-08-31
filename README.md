@@ -546,7 +546,7 @@ Also, sta report post synthesis can be viewed by going to the location `logs\cts
  <img width="1200" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/sky130_vsdinv_routing.png">
   </p><br>    
   Area report by magic   
-  Area of the chip is 4384.215 sq micrometers.
+  Area of the chip is 4910.54 sq micrometers.
    <p align="center">
   <img src="/images/box_area.png">
   </p><br>   
