@@ -15,14 +15,17 @@ The shift register, which allows serial input (one bit after the other through a
    - [6.2. Run Synthesis](#62-Run-Synthesis)<br>
  - [7. Netlist](#7-Netlist)<br>
  - [8. Gate Level Simulation GLS](#8-Gate-Level-Simulation-GLS)<br>
- - [9. Physical Design](#9-Physical-Design)<br>
-   - [8.1. Software Used](#81-Softwares-Used)
-   - [8.2. Preperation for Running OpenLane](#82-Preperation-for-Running-OpenLane)
-   - [8.3. Synthesis](#83-Synthesis)
-   - [8.4. Floorplan](#84-Floorplan)
-   - [8.5. Placement](#85-Placement)
-   - [8.6. Clock Tree Synthesis](#86-Clock-Tree-Synthesis)
-   - [8.7 Routing](#87-Routing)
+ - [9. Physical Design(RTL to GDSII)](#9-Physical-Design(RTL-to-GDSII))<br>
+   - [9.1. Software used and Installation](#91-Software-used-and-Installation)
+   - [9.2. Config.json file](#92-Config.json-file)
+   - [9.3. Design a Inverter library cell - sky130_vsdinv](#93-Design-a-Inverter-library-cell---sky130_vsdinv)
+   - [9.4. Preparation and Integration of Custom Cell in OpenLane](#94-Preparation-and-Integration-of-Custom-Cell-in-OpenLane)
+   - [9.5. Synthesis](#95-Synthesis)
+   - [9.6. Floorplan](#96-Floorplan)
+   - [9.7. Placement](#97-Placement)
+   - [9.8. Clock Tree Synthesis](#98-Clock-Tree-Synthesis)
+   - [9.9. Routing](#99-Routing)
+   - [9.10 Logs and Reports](#910-Logs and Reports)
  - [Author](#9-Author)
  - [Acknowledgement](#10-Acknowledgement)
  - [Contact Information](#11-Contact-Information)
@@ -163,8 +166,9 @@ now you see gtkwave waveform and compare it with fuctional simulation waveform
  <p align="center">   
  <img width=""1300 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/00ddb962665250deda9ef39a795d71d52011a8fb/images/asic_flow2.png">
  </p><br>   
- ## 9.1. Software used and Installation  
- ## OpenLane   
+ ## 9.1. Software used and Installation   
+ 
+ ### OpenLane   
  
  OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, CU-GR, Klayout and a number of custom scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII.
 
@@ -184,7 +188,7 @@ Required Installations
  ```   
  ./flow.tcl -design spm   
  ```    
- ## magic   
+ ### magic   
  The open-source license has allowed VLSI engineers with a bent toward programming to implement clever ideas and help magic stay abreast of fabrication technology. However, it is the well thought-out core algorithms which lend to magic the greatest part of its popularity. Magic is widely cited as being the easiest tool to use for circuit layout, even for people who ultimately rely on commercial tools for their product design flow.
  
  Now we will install Magic to see our layouts   
@@ -213,19 +217,8 @@ Required Installations
  ```   
  more at http://opencircuitdesign.com/   
  
- # Generating the Layout (RTL TO GDSII)   
  
- Preparation steps
- ```
- cd OpenLane   
- cd designs   
- mkdir iiitb_sipo   
- cd iiitb_sipo   
- makdir src   
- ```
- now paste project file in src(.v file) and make your config.json file and place it in the iiitb_sipo folder in Designs.
- 
- ## Config.json file   
+ ## 9.2. Config.json file   
  ```
  {
     "DESIGN_NAME": "iiitb_sipo",
@@ -253,7 +246,7 @@ Required Installations
     }
 }    
 ```    
-## Design a Inverter library cell - sky130_vsdinv   
+## 9.3. Design a Inverter library cell - sky130_vsdinv   
 
 First, clone the github repo containing the inverter and prepare for the next steps.
 ```
@@ -416,7 +409,19 @@ MACRO sky130_vsdinv
 END sky130_vsdinv
 END LIBRARY
 ```   
-## Integration of Custom Cell in OpenLane   
+## 9.4. Preparation and Integration of Custom Cell in OpenLane    
+
+ ### Generating the Layout   
+ 
+ Preparation steps
+ ```
+ cd OpenLane   
+ cd designs   
+ mkdir iiitb_sipo   
+ cd iiitb_sipo   
+ makdir src   
+ ```
+ Now, paste the verilog code `iiitb_gc.v`,and `sky130_vsdinv.lef`, `sky130_fd_sc_hd__fast.lib`,  `sky130_fd_sc_hd__slow.lib` and `sky130_fd_sc_hd__typical.lib` from vsdstdcelldesign folder to the folder `OpenLane/designs/iiitb_sipo/src`, and also make your config.json file and place it in the iiitb_sipo folder in Designs.
 
 We will do all in Interactive OpenLane Flow
 
@@ -426,12 +431,14 @@ set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
 add_lefs -src $lefs
 run_synthesis    
 ```   
+
  <p align="center">   
  <img width="1200" height="400" src="https://github.com/adityasingh6256/iiitb_sipo/blob/f734709c674bc3f851476d805c83fdeb3caa6df5/images/prep_design.png">
  </p><br>   
-```    
+ 
 
-## Synthesis    
+## 9.5. Synthesis  
+
   <p align="center">
   <img src="/images/synthesis.png">
 </p><br>   
@@ -442,13 +449,13 @@ run_synthesis
   <img src="/images/stats_synthesis.png ">
   </p><br>   
  
- ## Floorplan   
+ ## 9.6. Floorplan   
  
  <p align="center">
   <img src="/images/floorplan.png ">
   </p><br>    
  
- ## Core and Die area  
+ ### Core and Die area  
  
  CORE AREA
  
@@ -462,7 +469,7 @@ run_synthesis
   <img src="/images/die_area.png ">
   </p><br>  
  
- ## Placement   
+ ## 9.7. Placement   
  
   <p align="center">
   <img src="/images/placement1.png ">
@@ -484,11 +491,30 @@ run_synthesis
  
  <p align="center">
   <img src="/images/sky130_vsdinv_placement.png">
-  </p><br> 
+  </p><br>  
+  ## 9.8. Clock Tree Synthesis   
+  The next step is to run run clock tree synthesis. The CTS run adds clock buffers in therefore buffer delays come into picture and our analysis from here on deals with real clocks. To run clock tree synthesis, type the following commands
+  ```   
+  run_cts   
+  ```   
+  <p align="center">
+  <img src="/images/cts.png">
+</p><br>
+
+The netlist with clock buffers can be viewed by going to the location `results\cts\iiitb_gc.v`
+
+Also, sta report post synthesis can be viewed by going to the location `logs\synthesis\12-cts.log`
+<p align="center">
+  <img src="/images/cts_sta.png">
+</p><br>
+
     
  
  
- ## ROUTING   
+ ## 9.9. Routing    
+ ```    
+ run_routing  
+ ```   
  
   <p align="center">
   <img src="/images/routing1.png">
@@ -519,12 +545,13 @@ run_synthesis
  <img width="1200" height="700" src="https://github.com/adityasingh6256/iiitb_sipo/blob/fb97377e7c30c157f347616964d1dc7ebc96cb10/images/sky130_vsdinv_routing.png">
   </p><br>    
   Area report by magic   
+  Area of the chip is 4384.215 sq micrometers.
    <p align="center">
   <img src="/images/box_area.png">
   </p><br>   
   
   
- ## Logs & Reports  
+ ## 9.10. Logs & Reports  
   we can check it in 
   
   /home/aditya/vsd/OpenLane/designs/iiitb_sipo/runs/RUN_2022.08.30_12.48.56/logs/routing/  
