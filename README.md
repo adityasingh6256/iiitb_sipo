@@ -15,7 +15,7 @@ The shift register, which allows serial input (one bit after the other through a
    - [6.2. Run Synthesis](#62-Run-Synthesis)<br>
  - [7. Netlist](#7-Netlist)<br>
  - [8. Gate Level Simulation GLS](#8-Gate-Level-Simulation-GLS)<br>
- - [9. Physical Design (RTL to GDSII)](#9-Physical-Design-(RTL-to-GDSII))<br>
+ - [9. Physical Design - RTL to GDSII](#9-Physical-Design---RTL-to-GDSII)<br>
    - [9.1. Software used and Installation](#91-Software-used-and-Installation)
    - [9.2. Config.json file](#92-Config.json-file)
    - [9.3. Design a Inverter library cell - sky130_vsdinv](#93-Design-a-Inverter-library-cell---sky130_vsdinv)
@@ -158,7 +158,7 @@ now you see gtkwave waveform and compare it with fuctional simulation waveform
  </p><br>    
   Now after GLS we move for physical design and we will make final layout of chip.    
   
-# 9. Physical Design (RTL to GDSII)   
+# 9. Physical Design - RTL to GDSII   
  
  what are the steps   
  
