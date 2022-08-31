@@ -6,7 +6,7 @@ The shift register, which allows serial input (one bit after the other through a
  - [1. Introduction](#1-Introduction)<br>
  - [2. Applications](#2-Applications)<br>
  - [3. Block Diagram](#3-Block-Diagram)<br>
- - [5. Functional Characteristics](#3-Functional-Characteristics)<br>
+ - [4. Functional Characteristics](#4-Functional-Characteristics)<br>
  - [5. Functional Simulation](#5-Functional-Simulation)<br>
    - [5.1. Softwares Used](#51-Softwares-Used)<br>
    - [5.2. Simulation Results](#52-Simulation-Results)<br>
@@ -158,7 +158,7 @@ now you see gtkwave waveform and compare it with fuctional simulation waveform
  </p><br>    
   Now after GLS we move for physical design and we will make final layout of chip.    
   
- # 9. Physical Design (RTL to GDSII)   
+# 9. Physical Design (RTL to GDSII)   
  
  what are the steps   
  
@@ -169,11 +169,11 @@ now you see gtkwave waveform and compare it with fuctional simulation waveform
  <img width=""1300 height="600" src="https://github.com/adityasingh6256/iiitb_sipo/blob/00ddb962665250deda9ef39a795d71d52011a8fb/images/asic_flow2.png">
  </p><br>   
  
- ## 9.1. Software used and Installation   
+## 9.1. Software used and Installation   
  
- ### OpenLane   
+### OpenLane   
  
- OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, CU-GR, Klayout and a number of custom scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII.
+OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, CU-GR, Klayout and a number of custom scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII.
 
 more at https://github.com/The-OpenROAD-Project/OpenLane   
  
@@ -221,7 +221,7 @@ Required Installations
  more at http://opencircuitdesign.com/   
  
  
- ## 9.2. Config.json file  
+## 9.2. Config.json file  
  
  ```
  {
@@ -497,7 +497,7 @@ run_synthesis
   <img src="/images/sky130_vsdinv_placement.png">
   </p><br>   
   
-  ## 9.8. Clock Tree Synthesis   
+## 9.8. Clock Tree Synthesis   
   The next step is to run run clock tree synthesis. The CTS run adds clock buffers in therefore buffer delays come into picture and our analysis from here on deals with real clocks. To run clock tree synthesis, type the following commands
   ```   
   run_cts   
@@ -512,7 +512,7 @@ Also, sta report post synthesis can be viewed by going to the location `logs\cts
 </p><br>
 
     
- ## 9.9. Routing    
+## 9.9. Routing    
  ```    
  run_routing  
  ```   
@@ -577,9 +577,9 @@ Also, sta report post synthesis can be viewed by going to the location `logs\cts
   <img src="/images/power_report.png">
   </p><br> 
         
-  # 10. Summary   
+# 10. Summary   
   
- ### VLSI INTERACTIVE OPENLANE FLOW    
+### VLSI INTERACTIVE OPENLANE FLOW    
 
 ```    
 cd OpenLane/ 
@@ -628,7 +628,7 @@ To generate the layout, type the following commands
  -   Kunal Ghosh
  -   Vinay Rayapati   
    
-# 13. Acknowledgements   
+# 13. Acknowledgement   
 
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 
