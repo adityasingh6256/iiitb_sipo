@@ -560,14 +560,16 @@ Also, sta report post synthesis can be viewed by going to the location `logs\cts
    <p align="center">
   <img src="/images/cells.png">
   </p><br>   
-  ### Area   
+  
+ ### Area   
   
   area = 4910.549 um^2   
   
   <p align="center">
   <img src="/images/area.png">
   </p><br>   
-  ### Performance   
+  
+ ### Performance   
   
   commands to get performance and slack ...you can also check it in cts logs files.
   before that copy all needed files(.v and sdc file from results/cts and spef file from routing) anywhere in pdks if read command don't work normally   
@@ -599,7 +601,7 @@ Also, sta report post synthesis can be viewed by going to the location `logs\cts
   here in this design   1/(65.53-64.79)ns = 1.3513 GHZ (performance)    
   
   
-  ### Flip-flop to standard cell ratio   
+ ### Flip-flop to standard cell ratio   
   
   4/16 = 0.25   
   
@@ -607,7 +609,7 @@ Also, sta report post synthesis can be viewed by going to the location `logs\cts
   <img src="/images/dff.png">
   </p><br>   
   
-  ### Power   
+ ### Power   
   
   total power = 1.32e-05 watt   
   
