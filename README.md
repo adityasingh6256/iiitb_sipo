@@ -558,11 +558,14 @@ Also, sta report post synthesis can be viewed by going to the location `logs\cts
   no. of cells = 16   
   
    <p align="center">
-  <img src="/images/power_report.png">
+  <img src="/images/cells.png">
   </p><br>   
   ### Area   
+  
+  area = 4910.549 um^2   
+  
   <p align="center">
-  <img src="/images/power_report.png">
+  <img src="/images/area.png">
   </p><br>   
   ### Performance   
   
@@ -574,7 +577,7 @@ Also, sta report post synthesis can be viewed by going to the location `logs\cts
   sta
   read_liberty -max /home/aditya/vsd/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/sky130_fd_sc_hd__fast.lib    
   read_liberty -min /home/aditya/vsd/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/sky130_fd_sc_hd__slow.lib    
-  read_verilog /home/aditya/vsd/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/iiitb_sipo.v   
+  read_verilog /home/aditya/vsd/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/iiitb_sipo_cts.v   
   link_design iiitb_sipo   
   read_sdc /home/aditya/vsd/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/iiitb_sipo.sdc   
   read_spef /home/aditya/vsd/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/iiitb_sipo.nom.spef   
@@ -584,20 +587,24 @@ Also, sta report post synthesis can be viewed by going to the location `logs\cts
   report_checks -from _20_ -to _22_
   ```   
   <p align="center">
-  <img src="/images/power_report.png">
+  <img src="/images/reg_to_reg.png">
   </p><br>   
-  you get your slack.
-  now clock period with clock network delay (propagated) - slack = delay
-  performance 1/delay    
-  here 1/(65.53-64.79)ns = 1.3513 GHZ (performance)    
   
-  ### Flip-flop to standard cell ratio  
+  you get your slack.    
   
+  now clock period with clock network delay (propagated) - slack = delay    
+  
+  performance = 1/delay     
+  
+  here in this design   1/(65.53-64.79)ns = 1.3513 GHZ (performance)    
+  
+  
+  ### Flip-flop to standard cell ratio   
   
   4/16 = 0.25   
   
   <p align="center">
-  <img src="/images/power_report.png">
+  <img src="/images/dff.png">
   </p><br>   
   
   ### Power   
@@ -605,7 +612,7 @@ Also, sta report post synthesis can be viewed by going to the location `logs\cts
   total power = 1.32e-05 watt   
   
    <p align="center">
-  <img src="/images/power_report.png">
+  <img src="/images/total_power.png">
   </p><br>   
   
         
