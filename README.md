@@ -25,7 +25,7 @@ The shift register, which allows serial input (one bit after the other through a
    - [9.7. Placement](#97-Placement)
    - [9.8. Clock Tree Synthesis](#98-Clock-Tree-Synthesis)
    - [9.9. Routing](#99-Routing)
-   - [9.10 Logs and Reports](#910-Logs-and-Reports)
+   - [9.10 Results](#910-Results)
  - [10. Summary](#10-Summary)
  - [Author](#11-Author)
  - [Contributors](#12-Contributors)
@@ -552,30 +552,62 @@ Also, sta report post synthesis can be viewed by going to the location `logs\cts
   </p><br>   
   
   
- ## 9.10. Logs and Reports  
-  we can check it in 
-  
-  /home/aditya/vsd/OpenLane/designs/iiitb_sipo/runs/RUN_2022.08.30_12.48.56/logs/routing/  
+ ## 9.10. Results   
  
- ### Time report   
- 
-   <p align="center">
-  <img src="/images/time_report.png">
-  </p><br> 
-    
-  
-  ### Congestion Report   
-  
-    <p align="center">
-  <img src="/images/congestion_report.png">
-  </p><br> 
-     
-  
-  ### Power and Area report   
+ ### Post synthesis gate count   
+  no. of cells = 16   
   
    <p align="center">
   <img src="/images/power_report.png">
-  </p><br> 
+  </p><br>   
+  ### Area   
+  <p align="center">
+  <img src="/images/power_report.png">
+  </p><br>   
+  ### Performance   
+  
+  commands to get performance and slack ...you can also check it in cts logs files.
+  before that copy all needed files(.v and sdc file from results/cts and spef file from routing) anywhere in pdks if read command don't work normally   
+  ```   
+  cd openlane   
+  sudo make mount
+  sta
+  read_liberty -max /home/aditya/vsd/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/sky130_fd_sc_hd__fast.lib    
+  read_liberty -min /home/aditya/vsd/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/sky130_fd_sc_hd__slow.lib    
+  read_verilog /home/aditya/vsd/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/iiitb_sipo.v   
+  link_design iiitb_sipo   
+  read_sdc /home/aditya/vsd/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/iiitb_sipo.sdc   
+  read_spef /home/aditya/vsd/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/iiitb_sipo.nom.spef   
+  set_propagated_clock [all_clocks]    
+  report_checks   
+  report_checks -from _23_ -to _21_
+  report_checks -from _20_ -to _22_
+  ```   
+  <p align="center">
+  <img src="/images/power_report.png">
+  </p><br>   
+  you get your slack.
+  now clock period with clock network delay (propagated) - slack = delay
+  performance 1/delay    
+  here 1/(65.53-64.79)ns = 1.3513 GHZ (performance)    
+  
+  ### Flip-flop to standard cell ratio  
+  
+  
+  4/16 = 0.25   
+  
+  <p align="center">
+  <img src="/images/power_report.png">
+  </p><br>   
+  
+  ### Power   
+  
+  total power = 1.32e-05 watt   
+  
+   <p align="center">
+  <img src="/images/power_report.png">
+  </p><br>   
+  
         
 # 10. Summary   
   
